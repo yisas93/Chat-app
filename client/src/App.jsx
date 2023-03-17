@@ -2,7 +2,7 @@ import './App.css';
 import io from "socket.io-client"
 import { useState } from 'react';
 import { Chat } from './chat.jsx';
-const socket = io.connect("http://localhost:3001");
+const socket = io.connect("https://3001-yisas93-chatapp-vsrilxynuki.ws-us90.gitpod.io");
 function App() {
   const [username, setUsername]= useState("")
   const [room, setRoom]=useState("")
