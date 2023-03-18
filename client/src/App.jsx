@@ -2,7 +2,8 @@ import './App.css';
 import io from "socket.io-client"
 import { useState } from 'react';
 import { Chat } from './chat.jsx';
-const socket = io.connect("https://3001-yisas93-chatapp-vsrilxynuki.ws-us90.gitpod.io");
+const apiUrl = process.env.BACKEND_URL
+const socket = io.connect("https://3001-yisas93-chatapp-46ztkqjggj0.ws-us90.gitpod.io");
 function App() {
   const [username, setUsername]= useState("")
   const [room, setRoom]=useState("")

@@ -5,9 +5,10 @@ const cors=require("cors")
 const {Server} = require("socket.io")
 app.use(cors())
 const server = http.createServer(app)
+const frontUrl = process.env.FRONTEND_URL
 const io= new Server(server,{
     cors:{
-        origin:"https://3000-yisas93-chatapp-vsrilxynuki.ws-us90.gitpod.io",
+        origin:"https://3000-yisas93-chatapp-46ztkqjggj0.ws-us90.gitpod.io",
         methods:["GET", "POST"]
     }
 } )

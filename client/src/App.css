@@ -116,6 +116,7 @@ body {
 
 #other {
   justify-content: flex-start;
+  display: grid;
 }
 
 #other .message-content {
@@ -129,6 +130,7 @@ body {
 
 #you {
   justify-content: flex-end;
+  display: grid;
 }
 
 #you .message-content {
